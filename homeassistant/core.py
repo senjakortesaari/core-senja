@@ -504,6 +504,7 @@ class HomeAssistant:
 
         This method is a coroutine.
         """
+        _LOGGER.warning("Hej SENJA!")
         _LOGGER.info("Starting Home Assistant %s", __version__)
 
         def _log_startup_blocked(tasks: set[asyncio.Future[Any]]) -> None:
